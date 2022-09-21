@@ -1,0 +1,70 @@
+# ana sayfaya gidilir ve dogrulanır
+* "//button[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']" xpath'li elemente tıkla
+* "//a[@title='A101' and @class='logo']" xpath'li elementinin görünür olması kontrol edilir
+* "2" kadar bekle
+
+# Sırasıyla Giyim & aksesuar, Kadın iç giyim, Diz altı çorap kategorisi seçilir
+* "//a[@data-pk='37a6c1c8-a180-4b87-9ec9-3a29f6453a0c'][normalize-space(text())='Giyim & aksesuar']" xpath'li elemente tıkla
+* "//a[@data-pk='37a6c1c8-a180-4b87-9ec9-3a29f6453a0c'][normalize-space(text())='Giyim & aksesuar']" xpath'li elementinin görünür olması kontrol edilir
+
+* "//li[@class='derin ']/a[@title='Kadın İç Giyim']" xpath'li elemente tıkla
+* "//li[@class='breadcrumb-item']/a[@title='Kadın İç Giyim']" xpath'li elementinin görünür olması kontrol edilir
+
+
+* "//li[@class='derin ']/a[normalize-space(text())='Dizaltı Çorap']" xpath'li elemente tıkla
+* "//li[@class='derin ']/a[normalize-space(text())='Dizaltı Çorap']" xpath'li elementinin görünür olması kontrol edilir
+
+* "//div[@class='product-desc ']/descendant::h3[normalize-space(text())='Penti Kadın 50 Denye Pantolon Çorabı Siyah']" xpath'li elementinin görünür olması kontrol edilir
+* "//div[@class='product-desc ']/descendant::h3[normalize-space(text())='Penti Kadın 50 Denye Pantolon Çorabı Siyah']" xpath'li elemente tıkla
+* "//div[text()='Ürün kodu: 25000759001']" xpath'li elementinin görünür olması kontrol edilir
+* "//span[text()='SİYAH']" xpath'li elementinin görünür olması kontrol edilir
+
+# Sepete ekleme ve onaylama işlemleri yapılır
+* "//button[@class='add-to-basket button green block with-icon js-add-basket' and @data-pk='18864']" xpath'li elemente tıkla
+* "//a[@class='button green block' and @title='Sepeti Onayla']" xpath'li elementinin görünür olması kontrol edilir
+* "//a[@class='go-to-shop' and @title='Sepeti Görüntüle']" xpath'li elemente tıkla
+* ".button.green.checkout-button.block.js-checkout-button" css'li elementinin görünür olması kontrol edilir
+* ".button.green.checkout-button.block.js-checkout-button" css'li elemente tıkla
+* ".title.login-title" css'li elementinin görünür olması kontrol edilir
+
+# üye olmadan devam edilip mail girişi yapılır
+* ".auth__form__proceed.js-proceed-to-checkout-btn" css'li elemente tıkla
+* "//button[@type='submit' and @class='button block green']" xpath'li elementinin görünür olması kontrol edilir
+* "//input[@type='text' and @name='user_email' and @class='js-form-input']" xpath li elemente "testt12345678900000099111112345678901234567890012@hotmail.com" degerini yaz
+* "//button[@type='submit' and @class='button block green']" xpath'li elemente tıkla
+
+
+# adres bilgileri girilir
+* "//span[text()='1. ADRES & KARGO  BİLGİLERİ']" xpath'li elementinin görünür olması kontrol edilir
+* "//li[@class='half']/a[not(contains(@data-type,'bill_address'))]" xpath'li elemente tıkla
+* "//span[text()='Adres Güncelleme']" xpath'li elementinin görünür olması kontrol edilir
+* "//input[@placeholder='Ev adresim, iş adresim vb.']" xpath li elemente "ev" degerini yaz
+* "//input[@type='text' and @name='first_name']" xpath li elemente "ahmet" degerini yaz
+* "//input[@type='text' and @name='last_name']" xpath li elemente "mehmet" degerini yaz
+* ".js-phone-number" css li elemente "5555555555" degerini yaz
+* ".js-cities" css'li elementin "İZMİR" degerini seç
+* "1" kadar bekle
+* ".js-township" css'li elementin "BORNOVA" degerini seç
+* "1" kadar bekle
+* ".js-district" css'li elementin "LAKA MAH" degerini seç
+* "textarea[class='js-address-textarea']" css li elemente "test mahallesi test sokak test dairesiii" degerini yaz
+//* ".js-post-code" css li elemente "111111" degerini yaz
+* ".button.green.js-set-country.js-prevent-emoji" css'li elemente tıkla
+* "1" kadar bekle
+
+# ödeme sayfasına gidilir ve dogrulanır
+
+* ".button.block.green.js-proceed-button" css'li elementinin görünür olması kontrol edilir
+
+* "label[class='js-checkout-cargo-item']" css'li elementinin görünür olması kontrol edilir
+* "label[class='js-checkout-cargo-item']" css'li elemente tıkla
+
+* ".button.block.green.js-proceed-button" css'li elementinin görünür olması kontrol edilir
+* ".button.block.green.js-proceed-button" css'li elemente tıkla
+* "//div[@class='card']/div[normalize-space(text())='Masterpass ile Ödeme']" xpath'li elementinin görünür olması kontrol edilir
+
+* ".order-complete" css'li elemente tıkla
+* "//span[text()='Lütfen kart seçin veya kart bilgisi girin.']" xpath'li elementinin görünür olması kontrol edilir
+
+
+* "2" kadar bekle
