@@ -1,0 +1,112 @@
+# a101 sitesine gidilir
+* "10" kadar bekle
+
+
+# Sırasıyla giyim&aksesuar, Kadın iç giyim, Dizaltı Çorap bölümlerine tıklanır
+
+
+
+* "(//android.widget.TextView[@index='0'])[1]" Xpath'li mobilde element görünür mü?
+* "(//android.widget.TextView[@index='0'])[1]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+
+* "//android.widget.TextView[contains(@text,'GİYİM & AKSESUAR')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'GİYİM & AKSESUAR')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+
+* "//android.widget.TextView[contains(@text,'Kadın İç Giyim')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'Kadın İç Giyim')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+
+* "//android.widget.TextView[contains(@text,'Dizaltı Çorap')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'Dizaltı Çorap')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+# ürün seçilir ve siyah oldugu dogrulanır
+* "//android.widget.TextView[contains(@text,'Penti Kadın 50 Denye Pantolon Çorabı Siyah')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'Penti Kadın 50 Denye Pantolon Çorabı Siyah')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+
+* "(//android.widget.TextView[contains(@text,'Siyah')])[2]" Xpath'li mobilde element görünür mü?
+
+# sepeti ekle, görüntüle ve onayla butonlarına tıklanır
+* "//android.widget.TextView[contains(@text,'SEPETE EKLE')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'SEPETE EKLE')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+
+
+* "//android.widget.TextView[contains(@text,'SEPETE GİT')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'SEPETE GİT')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+
+
+* "//android.widget.TextView[contains(@text,'SEPETİ ONAYLA')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'SEPETİ ONAYLA')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+
+# üye olmadan devam et butonuna tıklanır
+* "//android.widget.TextView[contains(@text,'ÜYE OLMADAN DEVAM ET')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'ÜYE OLMADAN DEVAM ET')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+
+# mail ekranı gelir ve mail girişi yapılır
+* "//android.widget.EditText[contains(@text,'E-posta Adresiniz')]" mobilde xpath'li elemente "denemetestdenemetest1234567890123@hotmail.com" değerini yaz
+* "(//android.view.ViewGroup[@index='1'])[4]" mobilde xpath'li elemente tıkla
+* "//android.widget.TextView[contains(@text,'GÖNDER')]" mobilde xpath'li elemente tıkla
+
+* "15" kadar bekle
+
+# adres ekranı gelir ve alanlar doldurulur
+* "//android.widget.Button[contains(@text,'KABUL ET')]" mobilde xpath'li elemente tıkla
+
+* "//android.widget.TextView[contains(@text,'Yeni adres oluştur')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.TextView[contains(@text,'Yeni adres oluştur')]" mobilde xpath'li elemente tıkla
+* "3" kadar bekle
+
+
+
+* "(//android.widget.EditText[@index='1'])[1]" mobilde xpath'li elemente "EV" değerini yaz
+* "(//android.widget.EditText[@index='1'])[2]" mobilde xpath'li elemente "mehmet" değerini yaz
+* "(//android.widget.EditText[@index='1'])[3]" mobilde xpath'li elemente "ahmet" değerini yaz
+* "(//android.widget.EditText[@index='1'])[4]" mobilde xpath'li elemente "5551112222" değerini yaz
+
+* "(//android.view.View[@index='1'])[15]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+* "//android.widget.CheckedTextView[contains(@text,'AĞRI')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+* "//android.view.View[@index='1' and @text='Seçiniz']" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+* "//android.widget.CheckedTextView[contains(@text,'ELEŞKİRT')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+* Sayfayı asagı kaydir
+*"1" kadar bekle
+* "(//android.view.View[@index='1'])[18]" mobilde xpath'li elemente tıkla
+*"1" kadar bekle
+* "//android.widget.CheckedTextView[contains(@text,'ALKUŞAK KÖYÜ')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+* "(//android.widget.EditText[@index='1'])[2]" mobilde xpath'li elemente "test mahallesi test sokak test apartmaın test dairesi" değerini yaz
+* "1" kadar bekle
+
+* "//android.widget.Button[contains(@text,'KAYDET')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.Button[contains(@text,'KAYDET')]" mobilde xpath'li elemente tıkla
+* "4" kadar bekle
+
+# sipariş tamamla butonuna tıklanır ve ödeme ekranına gidilir ve dogrulanır
+* Sayfayı asagı kaydir
+* "//android.widget.RadioButton[contains(@text,'₺9,90 UPS Kargo')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.RadioButton[contains(@text,'₺9,90 UPS Kargo')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+* "//android.widget.Button[contains(@text,'Kaydet ve Devam Et')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.Button[contains(@text,'Kaydet ve Devam Et')]" mobilde xpath'li elemente tıkla
+* "1" kadar bekle
+
+* "//android.widget.Button[contains(@text,'Siparişi Tamamla')]" Xpath'li mobilde element görünür mü?
+* "//android.widget.Button[contains(@text,'Siparişi Tamamla')]" mobilde xpath'li elemente tıkla
+
+* "//android.widget.TextView[contains(@text,'Lütfen kart seçin veya kart bilgisi girin.')]" Xpath'li mobilde element görünür mü?
+
+* "4" kadar bekle

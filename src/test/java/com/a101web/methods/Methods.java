@@ -1,6 +1,8 @@
-package com.a101.methods;
+package com.a101web.methods;
 
-import com.a101.driver.BaseTestWeb;
+import com.a101web.driver.BaseTestWeb;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -15,15 +17,25 @@ import java.time.Duration;
 public class Methods {
 
     WebDriver driver;
+    protected static AppiumDriver<MobileElement> appiumDriver;
 
     FluentWait<WebDriver> wait;
+    FluentWait<AppiumDriver> waitMobile;
 
     public Methods(){
 
+
         driver = BaseTestWeb.driver;
+
+        if(driver!=null){
         wait = new FluentWait<>(driver);
         wait.withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofMillis(300)).ignoring(NoSuchElementException.class);
+    }
+        if(appiumDriver!=null) {
+            waitMobile = new FluentWait<>(appiumDriver);
+            waitMobile.withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofMillis(300)).ignoring(NoSuchElementException.class);
 
+        }
     }
     public WebElement findElement(By by) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(by));
