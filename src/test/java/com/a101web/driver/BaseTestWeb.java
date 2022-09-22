@@ -35,7 +35,7 @@ public class BaseTestWeb {
 
     public void setUp(ExecutionContext executionContext) throws MalformedURLException {
 
-        System.out.println("Current Scenario: " + executionContext.getCurrentScenario().getName());
+        System.out.println("Kosulan Senaryo ismi: " + executionContext.getCurrentScenario().getName());
         String name = executionContext.getCurrentScenario().getName();
         System.out.println(name);
 
@@ -70,11 +70,11 @@ public class BaseTestWeb {
     @AfterScenario
     public void tearDown(ExecutionContext executionContext) {
 
-        System.out.println("Current Spec: " + executionContext.getCurrentSpecification().getName());
-        String name = executionContext.getCurrentSpecification().getName();
+        System.out.println("Kapatılan senaryo: " + executionContext.getCurrentScenario().getName());
+        String name = executionContext.getCurrentScenario().getName();
 
 
-        if (name == "a101 e2e web") {
+        if (name.contains("web")) {
             driver.close();
             driver.quit();
         } else {

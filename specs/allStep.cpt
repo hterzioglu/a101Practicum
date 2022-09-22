@@ -30,7 +30,7 @@
 # üye olmadan devam edilip mail girişi yapılır
 * ".auth__form__proceed.js-proceed-to-checkout-btn" css'li elemente tıkla
 * "//button[@type='submit' and @class='button block green']" xpath'li elementinin görünür olması kontrol edilir
-* "//input[@type='text' and @name='user_email' and @class='js-form-input']" xpath li elemente "testt12345678900000099111112345678901234567890012345@hotmail.com" degerini yaz
+* "//input[@type='text' and @name='user_email' and @class='js-form-input']" xpath li elemente "testt1234567890000009911111234567890123456789001234567891234@hotmail.com" degerini yaz
 * "//button[@type='submit' and @class='button block green']" xpath'li elemente tıkla
 
 
