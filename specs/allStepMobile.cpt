@@ -53,7 +53,7 @@
 * "3" kadar bekle
 
 # mail ekranı gelir ve mail girişi yapılır
-* "//android.widget.EditText[contains(@text,'E-posta Adresiniz')]" mobilde xpath'li elemente "denemetestdenemetest1234567890123456789@hotmail.com" değerini yaz
+* "//android.widget.EditText[contains(@text,'E-posta Adresiniz')]" mobilde xpath'li elemente "practicummobil1111@hotmail.com" değerini yaz
 * "(//android.view.ViewGroup[@index='1'])[4]" mobilde xpath'li elemente tıkla
 * "//android.widget.TextView[contains(@text,'GÖNDER')]" mobilde xpath'li elemente tıkla
 
